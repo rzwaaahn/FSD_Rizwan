@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Travel Registration</title>
+        <style>
+        legend{text-align: center;}
+        form{
+            text-align: center;
+            border:1px solid black;}
+        input{margin-left: 10px;}
+        .l1{margin-left: 10px}
+
+
+
+        button{margin-bottom: 10px;}
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset><legend><b>Travel Reg Form</b></legend></fieldset>
+            <label class="l1">From:</label>
+            <input class="i1" type="text" placeholder="Enter your from Destination" required>
+            <label>To:</label>
+            <input type="text" placeholder="Enter your to Destination" required><br><br>
+            <label class="l2">Date of Travelling:</label>
+            <input class="i2" type="date" required><br><br>
+            <label class="l3">First Name:</label>
+            <input class="i3" type="text" required><br><br>
+            <label class="l4"> Last Name:</label>
+            <input class="i4" type="text"><br><br>
+            <label class="l5">Gender:</label>
+            Male<input class="i5" type="radio" name="Gender" value="Male" required>
+            Female<input class="i5" type="radio" name="Gender" value="Female" required>
+            Others<input class="i5" type="radio" name="Gender" value="Others" required><br><br>
+            <label class="l6">Age:</label>      
+            <input class="i6" type="number" required><br><br>
+            <label class="l7">Phone No:</label>      
+            <input class="i7" type="number" required><br><br>
+            <label class="l8">E-mail:</label>      
+            <input class="i8" type="text" required><br><br>
+            <label class="l9">Password:</label>      
+            <input class="i9" type="password" required><br><br>
+            <button>Reg in</button>
+
+        </form>
+
+    </body>
+</html>

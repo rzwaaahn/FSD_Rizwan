@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Travel Registration Form</title>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            fieldset {
+                text-align: center;
+                width: 400px;
+                background: linear-gradient(to bottom,rgb(43, 145, 136),rgb(17, 204, 164));
+            }
+            
+            legend {
+                text-align: center;
+            }
+            
+            label {
+                display: block;
+                margin-top: 10px;
+            }
+            
+            input[type="radio"] {
+                text-align: center;
+                width: 10px;
+                padding: 8px;
+                margin-top: 5px;
+            }
+            
+            button {
+                text-align: center;
+                display: block;
+                padding: 10px;
+                width: 100%;
+                margin-top: 15px;
+            }
+
+            img{
+            text-align: center;
+            width: 100px;
+            margin-bottom: 10px;
+            height: 80px;
+        }
+            
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend><b>Travel Registration Form</b></legend>
+                <img src="./images/Logo.jpg" alt=""><br><br>
+            <select >
+                <option >-- Select --</option>
+                <option >Bus</option>
+                <option >Train</option>
+                <option >Flight</option>
+                <option >Ship</option>
+            </select>
+                <label>From:</label>
+                <input type="text" placeholder="Enter City" required>
+                <label>To:</label>
+                <input type="text" placeholder="Enter City" required>
+
+                <label>Departure Date:</label>
+                <input type="date" required>
+                <label>Return Date:</label>
+                <input type="date" required>
+
+                <label>First Name:</label>
+                <input type="text" placeholder="Enter First Name" required>
+                <label>Last Name:</label>
+                <input type="text" placeholder="Enter Last Name">
+
+                <label>Gender:</label>
+                <input type="radio" name="Gender" value="male" required> Male
+                <input type="radio" name="Gender" value="female" required> Female
+                <input type="radio" name="Gender" value="other" required> Other
+
+                <label>Age:</label>
+                <input type="number" placeholder="Enter Age" required>
+                <label>Contact Number:</label>
+                <input type="tel" placeholder="Enter Contact Number" required>
+                <label>Email:</label>
+                <input type="email" placeholder="Enter Email" required>
+                <label>Password:</label>
+                <input type="password" placeholder="Enter Password" required>
+                
+                <button type="submit">Register</button>
+            </fieldset>
+        </form>
+    </body>
+</html>

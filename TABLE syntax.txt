@@ -1,0 +1,10 @@
+<TABLE> 
+<thead>
+  <th>Sl.no</th>
+  <th>College Name</th>
+  <th>Course Name</th>
+  <th>Year of Pass out</th>
+</thead>
+<tbody></tbody>
+<tfoot></tfoot>
+</TABLE>

@@ -1,0 +1,44 @@
+h1{
+    text-align: center;
+}
+.parent{
+    background-color: rgb(109, 9, 148);
+    width: 100%;
+    height: 100px;
+    gap: 3px;
+    display: grid;
+    grid-template-columns: auto auto auto  ;
+}
+div{
+    background-color: rgb(119, 50, 146);
+    text-align: center;
+
+
+}
+.i1:hover{
+    background-color: rgb(161, 6, 233);
+}
+.i2:hover{
+    background-color: rgb(161, 6, 233);
+}
+.i3:hover{
+    background-color: rgb(161, 6, 233);
+}
+.i4:hover{
+    background-color: rgb(161, 6, 233);
+}
+.i5:hover{
+    background-color: rgb(161, 6, 233);
+}
+.i6:hover{
+    background-color: rgb(161, 6, 233);
+}
+.i7:hover{
+    background-color: rgb(161, 6, 233);
+}
+.i8:hover{
+    background-color: rgb(161, 6, 233);
+}
+.i9:hover{
+    background-color: rgb(161, 6, 233);
+}

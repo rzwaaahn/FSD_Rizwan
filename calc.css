@@ -1,0 +1,199 @@
+ 
+        form{
+            margin-left: auto;
+            margin-right: auto;
+            width: 295px;
+            height: 393px;
+            background-color:  rgb(38, 170, 159);
+            margin-top: 210px;
+            border-radius: 10px;
+        }
+        body{
+            background-color: rgb(11, 92, 81)
+        }
+        .i1{
+            width: 270px;
+            height: 50px;
+            margin-top: 30px;
+            margin-left: 12px;
+            border : 0.3px solid rgb(0, 0, 0);
+            font-size: 18px;
+            padding-left: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: inset 2px 2px 5px rgb(125, 125, 125);
+            background-color: white
+        }
+        
+        .b1{
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 20px;
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            border-radius: 5px;
+            background: linear-gradient(to bottom,rgb(30, 219, 204));
+            
+        }
+        .b2{
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 20px;
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            border-radius: 5px;
+            background: linear-gradient(to bottom,rgb(30, 219, 204));
+        }
+        .b3{
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 20px;
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            border-radius: 5px;
+            background: linear-gradient(to bottom,rgb(30, 219, 204));
+        }
+        .b4{
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 20px;
+            width: 50px;
+            height: 60px;
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: rgb(30, 80, 76);
+            color: white;
+        }
+        .b5{
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            border-radius: 5px;
+            background: linear-gradient(to bottom,rgb(30, 219, 204));
+        }
+        .b6{
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            border-radius: 5px;
+            background: linear-gradient(to bottom,rgb(30, 219, 204));
+        }
+        .b7{
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            border-radius: 5px;
+            background: linear-gradient(to bottom,rgb(30, 219, 204));
+        }
+        .b8{
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 50px;
+            height: 60px;
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: rgb(30, 80, 76);
+            color: white;
+        }
+        .b9{
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            border-radius: 5px;
+            background: linear-gradient(to bottom,rgb(30, 219, 204));
+        }
+        .b10{
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            border-radius: 5px;
+            background: linear-gradient(to bottom,rgb(30, 219, 204));
+        }
+        .b11{
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            border-radius: 5px;
+            background: linear-gradient(to bottom,rgb(30, 219, 204));
+        }
+        .b12{
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 50px;
+            height: 60px;
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: rgb(30, 80, 76);
+            color: white;
+        }
+        .b13{
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: rgb(30, 80, 76);
+            color: white;
+        }
+        .b14{
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            border-radius: 5px;
+            background: linear-gradient(to bottom,rgb(30, 219, 204));
+        }
+        .b15{
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: rgb(30, 80, 76);
+            color: white;
+        }
+        .b16{
+            display: inline-block;
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 50px;
+            height: 60px;
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: rgb(30, 80, 76);   
+            color: rgb(255, 253, 253);
+        }
+        button:hover{
+            background-color: rgb(99, 99, 99);
+        }
+
+    
