@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Event Handlers</title>
+        <style>
+            h1{
+                text-align: center;
+                color: rgb(31, 59, 55);
+                margin-top: 10px;
+            }
+            div{
+                border: 1px solid rgb(67, 133, 124);
+                width: 340px;
+                margin-left: 775px;
+                margin-top: 170px;
+                background-color:rgb(48, 97, 90);
+                border-radius: 10px;
+                
+            }
+            .user{
+                margin-left: 50px;
+                
+            }
+            .pass{
+                margin-left: 50px;
+            }
+            #password{
+                margin-left: 4px;
+            }
+            button{
+                margin-left: 140px;
+                width: 70px;
+                height: 30px;
+                border-radius: 5px;
+                border: none;
+                background-color: rgb(67, 133, 124);
+            }
+            button:hover{
+                background-color: rgb(31,59,55);
+                border: none
+            }
+            body{
+                background-color: rgb(67, 133, 124);
+            }
+            #result{
+                margin-left: 120px;
+                font-weight: bold;
+            }
+            
+            
+            
+        </style>
+    </head>
+    <body>
+        
+        <h1>Event Handlers in JS</h1><br>
+        <div><br>
+        <label class="user">Username:</label>
+        <input type="text" placeholder="Enter Username" id="username"><br> <br>
+        <label class="pass">Password:</label>
+        <input type="password" placeholder="Enter password" id="password"><br><br>
+        <button onclick="Event()">Login</button>
+        <p id="result"></p>
+        </div>
+        <script>
+            function Event(){
+                //alert("Rizwan")
+                var user = document.getElementById("username").value;
+                var pass = document.getElementById("password").value;
+
+                if(user == "Rizwan" && pass == "1818"){
+                    //document.writeln("Login Success!!!");
+                    document.getElementById("result").innerHTML = "Login Success!!!";
+                    result.style.color = "green";
+                }
+                else{
+                    //document.writeln("Login Failed!!!");
+                    document.getElementById("result").innerHTML = "Login Failed!!!";
+                    result.style.color = "red";
+                }
+            }
+        </script>
+    </body>
+</html>

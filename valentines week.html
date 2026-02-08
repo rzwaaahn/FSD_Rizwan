@@ -1,0 +1,121 @@
+<html>
+<head>
+    <title>Valentine's Week - Switch Statement</title>
+
+    <style>
+        body {
+            background: linear-gradient(180deg,#8B0000,#A40021,#C21807,#D62828,#E63946,#F04E5E,#FF5C77,#FF758F,#FF8FAB,#FFB3C1,#FFB3C1,#FF8FAB,#FF5C77,#F04E5E,#E63946,#D62828,#C21807,#A40021,#8B0000);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-top: 175px;
+            font-size: 3.5em;
+            color: #FF8FAB;
+            text-shadow: 3px 3px 10px #d6336c;
+            letter-spacing: 2px;
+            margin-left: 25px;
+        }
+
+        /* Box container */
+        .box {
+            margin: 40px auto;
+            padding: 30px;
+            width: 350px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            backdrop-filter: blur(8px);
+            margin-top: 110px;
+        }
+
+        input {
+            padding: 12px;
+            width: 250px;
+            border-radius: 12px;
+            border: none;
+            font-size: 18px;
+            text-align: center;
+            outline: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px 25px;
+            font-size: 18px;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+            background-color: #ff4d6d;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #d6336c;
+        }
+
+        .result {
+            margin-top: 40px;
+            font-size: 2.3em;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.25);
+            padding: 25px;
+            border-radius: 20px;
+            display: inline-block;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            backdrop-filter: blur(8px);
+            color: #fff;
+            text-shadow: 2px 2px 8px #ff4d6d;
+            min-width: 300px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <h1>Valentine's Week 💖</h1>
+
+    <!-- Input Section inside a styled box -->
+    <div class="box">
+        <form onsubmit="showMessage(); return false;">
+            <input type="number" id="dayInput" placeholder="Enter day number (7 - 14)">
+            <br>
+            <button type="submit">Show Day</button>
+        </form>
+    </div>
+
+    <!-- Result Section -->
+    <div id="output" class="result">Waiting for your input 💘</div>
+
+    <script>
+        function showMessage() {
+            let day = Number(document.getElementById("dayInput").value);
+            let message = "";
+
+            switch(day){
+                case 7: message = "Rose Day 🌹"; break;
+                case 8: message = "Propose Day 💍"; break;
+                case 9: message = "Chocolate Day 🍫"; break;
+                case 10: message = "Teddy Day 🧸"; break;
+                case 11: message = "Promise Day 🤝"; break;
+                case 12: message = "Hug Day 🤗"; break;
+                case 13: message = "Kiss Day 😘"; break;
+                case 14: message = "Valentine's Day ❤️"; break;
+                default: message = "Not a Valentine's Week Day 💔";
+            }
+
+            document.getElementById("output").innerHTML = message;
+        }
+    </script>
+
+</body>
+</html>

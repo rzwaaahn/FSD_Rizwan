@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <title>Game Showcase</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        color: #000;
+      }
+
+      /* Navbar */
+      .navbar {
+        background-color: #1e1e1e;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .brand {
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      .nav {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+      }
+
+      .nav li {
+        color: #ddd;
+        cursor: pointer;
+      }
+
+      /* Hero */
+      .hero {
+        width: 100%;
+        height: 60vh;
+        overflow: hidden;
+      }
+
+      .hero video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* About */
+      .about {
+        max-width: 800px;
+        margin: 40px auto;
+        text-align: center;
+      }
+
+      .about h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+      }
+
+      .about p {
+        font-size: 16px;
+      }
+
+      /* Gallery */
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .gallery img {
+        width: 250px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="brand">GAMES</div>
+      <ul class="nav">
+        <li>Home</li>
+        <li>Games</li>
+        <li>About</li>
+      </ul>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero">
+      <video src="./videos/game intro.mp4" controls loop autoplay muted></video>
+    </div>
+
+    <!-- About -->
+    <div class="about">
+      <h2>About</h2>
+      <p>
+        Welcome to our game gallery. Click on each game cover to discover the world behind it, including gameplay highlights and immersive audio..
+      </p>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+      <img id="img1" src="./images/gta5.png" alt="Car 1">
+      <img id="img2" src="./images/tlou.jpg" alt="Car 2">
+      <img id="img3" src="./images/ghost.jpg" alt="Car 3">
+      <img id="img4" src="./images/detroit.jpg" alt="Car 4">
+    </div>
+
+    <!-- Sounds -->
+    <script>
+      const sound1 = new Audio("./gta 4.mp3");
+      const sound2 = new Audio("./tlou.mp3");
+      const sound3 = new Audio("./ghost.mp3");
+      const sound4 = new Audio("./detroit.mp3");
+
+      document.getElementById("img1").addEventListener("click", () => sound1.play());
+      document.getElementById("img2").addEventListener("click", () => sound2.play());
+      document.getElementById("img3").addEventListener("click", () => sound3.play());
+      document.getElementById("img4").addEventListener("click", () => sound4.play());
+    </script>
+  </body>
+</html>
