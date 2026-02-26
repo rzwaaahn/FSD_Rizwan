@@ -1,0 +1,319 @@
+h1{
+     text-align: center;
+     background-color: rgb(255, 204, 0);
+     border-radius: 9px;
+     padding: 5px;
+     color:black;
+     font-weight: bold;
+     margin-left: 15px;
+  }
+body{
+    margin: 0px;
+    padding: 0px;
+    
+    
+}
+.navbar{
+    background-color: whitesmoke;
+    
+    
+}
+.navbar,ul{
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+}
+ul{
+    margin-left: 1250px;
+    gap: 40px;
+
+}
+li{
+    margin-top: 10px;
+}
+.i1{
+    margin-left: 20px;
+    width: 380px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+}
+.i2{
+    margin-left: 20px;
+    width: 380px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+}
+.Bharat{
+    background-color: transparent;
+}
+.Book{
+    margin-left: 20px;
+    width: 380px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+    background-color: rgb(255, 204, 0);
+    font-weight: bold;
+}
+.form_img{
+    margin: 0px;
+    padding-top: 0px;
+    height: 300px;
+    text-align: center;
+    background-image:url(./images/rdmp.avif);
+    padding-bottom: 50px;
+
+    
+    
+}
+
+/* SERVICES SECTION */
+.services {
+  background-color: #d4c1c100;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.services {
+  
+  margin-top: -60px;
+
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 33px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 25px;
+  width: 160px;
+  border-radius: 11px;
+  box-shadow: 0 5px 15px rgba(222, 1, 1, 0.1);
+  
+}
+.service-card img {
+  width: 90px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  font-size: 15px;
+  font-weight: 200;
+}
+.our_service{
+    text-align: left;
+    font-size:30px;
+
+}
+
+.im{
+    background-image: url(./map.jpg);
+    padding-bottom: 30px;
+}
+.quick{
+    margin-left: 450px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.qui{
+    margin-left: 970px;
+    width: 500px;
+    margin-top: -170px;
+    border-radius: 20px;
+}
+.quick_des{
+    margin-left: 450px;
+    font-size: 20px;
+    
+}
+.book_ride{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    border: none;
+
+}
+.desc{
+    display: flex;
+    gap: 150px;
+    margin-left: 20px;
+   
+   
+}
+.ride1{
+    margin-top: 10px;
+    height: 350px;
+    width: 350px;
+    margin-left: 230px;
+    
+}
+
+.desc2{
+    display: flex;
+    gap: 400px;
+    margin-left: 5%;
+}
+.ride2{
+    margin-left: 350px;
+    margin-top: 40px;
+    height: 350px;
+    width: 350px;
+}
+.de2{
+    margin-top: 50px;
+    
+}
+.quick2{
+
+    font-weight: bold;
+    font-size: 30px;
+}
+.quick_des2{
+    
+    font-size: 20px;
+}
+.book_ride2{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+   
+
+}
+.desc3{
+    display: flex;
+    gap: 400px;
+    margin-left: 25%;
+}
+.ride3{
+    margin-left: 50px;
+    margin-top: 40px;
+    height: 250px;
+    width: 250px;
+}
+.de3{
+    margin-top: 50px;
+    
+}
+.quick3{
+    
+    font-weight: bold;
+    font-size: 30px;
+}
+.quick_des3{
+    
+    font-size: 20px;
+}
+.book_ride3{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+   
+
+}
+.download-section{
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.download-title{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.yellow-line-center{
+    width: 60px;
+    height: 4px;
+    background-color: #ffcc00;
+    margin: 15px auto 50px auto;
+}
+
+.download-container{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+
+.download-card{
+    text-align: center;
+}
+
+.app-logo{
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.app-text{
+    font-size: 22px;
+    line-height: 1.5;
+}
+.ride-section{
+    text-align: center;
+    padding: 60px;
+}
+
+.ride-img img{
+    width: 400px;
+    border-radius: 20px;
+}
+
+.de{
+    margin-top: 20px;
+}
+
+.quick{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.quick_des{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.social-section{
+    background-color: #f2f2f2;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.line{
+    height: 1px;
+    background-color: #cfcfcf;
+    width: 90%;
+    margin: 0 auto 30px auto;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 30px;
+}
+
+.icons img{
+    width: 40px;
+    cursor: pointer;
+}
+.CopyRight{
+    text-align: center;
+    color: grey;
+}
+.p2{
+    text-align: center;
+    color: grey;
+}
