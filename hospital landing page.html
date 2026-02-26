@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>City Hospital</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar{
+    background:#4a8bc2;
+    padding:15px;
+    color:white;
+}
+
+.navbar a{
+    color:white;
+    margin:15px;
+    text-decoration:none;
+    float:right;
+}
+
+
+.hero{
+    background-image:url(./hsp.jpg);
+    height:400px;
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    color:white;
+    padding-top:160px;
+}
+
+.hero button{
+    padding:10px 20px;
+    border:none;
+    background:red;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+
+.services{
+    text-align:center;
+    padding:40px 0;
+   
+}
+
+.service-box{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:20px;
+}
+
+.service-box div{
+    padding:15px 25px;
+    background:#f2f2f2;
+    border-radius:6px;
+    font-weight:600;
+}
+
+
+.gallery{
+    text-align:center;
+    padding:40px 0;
+}
+
+.gallery-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin-top:20px;
+}
+
+.gallery-container img{
+    width:160px;
+    height:110px;
+    object-fit:cover;
+    border-radius:6px;
+}
+
+
+.contact{
+    text-align:center;
+    padding:60px 0;
+}
+
+.contact form{
+    width:260px;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:8px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+.contact button{
+    padding:8px 18px;
+    border:none;
+    background:#e26b6b;
+    color:white;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+
+.footer{
+    background:#6e8fb4;
+    color:white;
+    text-align:center;
+    padding:12px;
+    margin-top:60px;
+}
+
+
+.popup{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+.popup-box{
+    background:white;
+    padding:20px 30px;
+    border-radius:8px;
+    text-align:center;
+}
+
+.popup-box button{
+    margin-top:10px;
+    padding:6px 15px;
+    border:none;
+    background:#4a8bc2;
+    color:white;
+    cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+    <b>City Hospital</b>
+    <a href="#">Contact</a>
+    <a href="#">Gallery</a>
+    <a href="#">Services</a>
+    <a href="#">Home</a>
+</div>
+
+<div class="hero">
+    <h1>Care For Your Health</h1>
+    <p>Best Medical & Health Care Services</p>
+    <button onclick="bookAppointment()">Book Appointment</button>
+</div>
+
+<section class="services">
+    <h2>Our Services</h2>
+
+    <div class="service-box">
+        <div>Emergency Care</div>
+        <div>Surgery</div>
+        <div>Pharmacy</div>
+    </div>
+</section>
+
+
+<section class="gallery">
+    <h2>Hospital Gallery</h2>
+
+    <div class="gallery-container">
+
+        <img src="./sasint-surgery-1807541_1920.jpg" alt="Doctor">
+        <img src="./elf-moondance-ai-generated-9198304_1920.png" alt="Doctor">
+        <img src="./sasint-surgery-1822458_1920.jpg" alt="Doctor">
+
+    </div>
+</section>
+
+
+<div class="contact">
+    <h3>Contact Us</h3>
+
+    <form onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="message" placeholder="Message">
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+
+<div class="footer">
+    © 2023 City Hospital | Designed by Student
+</div>
+
+
+<div class="popup" id="popup">
+    <div class="popup-box">
+        <p id="popup-message"></p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+<script>
+
+
+function showPopup(message){
+    document.getElementById("popup-message").innerText = message;
+    document.getElementById("popup").style.display = "flex";
+}
+
+function closePopup(){
+    document.getElementById("popup").style.display = "none";
+}
+
+
+function bookAppointment(){
+    showPopup("Thank you for booking. We will contact you soon.");
+}
+
+
+function validateForm(){
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+
+    if(name === "" || email === ""){
+        showPopup("Please fill all the fields");
+        return false;
+    }
+
+    showPopup("Your message has been sent successfully.");
+    return false;
+}
+
+</script>
+
+</body>
+</html>
