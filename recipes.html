@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipes - Savoury</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+ 
+<div class="navbar">
+  <div class="nav-left">
+    <img src="images/Savoury.png" class="logo">
+  </div>
+
+  <div class="nav-center">
+    <input type="text" id="searchInput" onkeydown="handleSearch(event)">
+  </div>
+
+  <div class="nav-right">
+    <a href="index.html">Home</a>
+    <a href="recipes.html" class="active">How to Prepare</a>
+    <a href="ingredients.html">Ingredients</a>
+    <a href="occasions.html">Occasions</a>
+    <a href="about.html">About</a>
+
+    <button class="login-btn" onclick="openLogin()">Login</button>
+    <button class="subscribe-btn" onclick="openLogin('subscribe')">Subscribe</button>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero recipes-hero">
+  <div class="hero-content">
+    <h1>How to Prepare </h1>
+    <p>Explore delicious dishes from around the world</p>
+  </div>
+</div>
+
+<div class="recipe-container">
+  <h2>Preparation Steps</h2>
+  <ol id="recipeSteps"></ol>
+</div>
+
+<!-- CONTENT -->
+
+<!-- LOGIN MODAL -->
+
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+
+    <div class="left">
+      <h2>"Embrace the art of cooking, where flavors come alive!"</h2>
+    </div>
+
+    <div class="right">
+      <span class="close" onclick="closeLogin()">×</span>
+
+      <h2>Login</h2>
+      <p>Enter your email or phone to log in.</p>
+
+      <div class="form-box">
+        <input type="text" id="email" placeholder="Enter email or phone number">
+        <input type="password" id="password" placeholder="Enter password">
+        <button class="primary-btn" onclick="login()">Continue</button>
+      </div>
+
+      <div class="divider">OR</div>
+
+      <button class="social google" onclick="socialLogin('Google')">Continue with Google</button>
+      <button class="social facebook" onclick="socialLogin('Facebook')">Continue with Facebook</button>
+      <button class="social apple" onclick="socialLogin('Apple')">Continue with Apple</button>
+    </div>
+
+  </div>
+</div>
+<!-- 💳 SUBSCRIBE MODAL -->
+<div id="subscribeModal" class="modal">
+  <div class="modal-content">
+
+    <div class="left subscribe-left">
+      <h2>Unlock Premium Recipes </h2>
+    </div>
+
+    <div class="right">
+      <span class="close" onclick="closeSubscribe()">×</span>
+
+      <h2>Subscribe</h2>
+      <p>Get unlimited access to premium recipes</p>
+
+      <h3 style="color:#ff6b00;">₹99 / month</h3>
+
+      <div class="form-box">
+        <button class="primary-btn" onclick="payNow()">Pay Now</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h2>Savoury 🍽️</h2>
+      <p>Cook smart. Eat better. Enjoy every bite.</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="ingredients.html">Ingredients</a>
+      <a href="occasions.html">Occasions</a>
+      <a href="about.html">About</a>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>Email: support@savoury.com</p>
+      <p>Phone: +91 98765 43210</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Savoury. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- JS -->
+<script src="js/auth.js"></script>
+<script>
+function loadRecipe() {
+  const search = localStorage.getItem("searchItem");
+
+  if (!search) return;
+
+  const recipes = [
+    {
+      name: "biryani",
+      instructions: "Cook rice. Fry chicken. Mix together. Serve hot."
+    },
+    {
+      name: "pizza",
+      instructions: "Prepare dough. Add toppings. Bake in oven."
+    },
+    {
+      name: "mandi",
+      instructions: "Cook rice. Prepare chicken. Serve together."
+    }
+  ];
+
+  const recipe = recipes.find(r => r.name === search);
+
+  const container = document.getElementById("recipeSteps");
+  container.innerHTML = "";
+
+  if (!recipe) {
+    container.innerHTML = "<p>No recipe found ❌</p>";
+    return;
+  }
+
+  const steps = recipe.instructions.split(".");
+
+  steps.forEach(step => {
+    if (step.trim() === "") return;
+
+    const li = document.createElement("li");
+    li.innerText = step;
+    container.appendChild(li);
+  });
+}
+
+loadRecipe();
+</script>
+</body>
+</html>

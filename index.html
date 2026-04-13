@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Savoury</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+  <div class="nav-left">
+    <img src="images/Savoury.png" class="logo">
+  </div>
+
+  <div class="nav-center">
+    <input type="text" id="searchInput" onkeydown="handleSearch(event)">
+  </div>
+
+  <div class="nav-right">
+    <a href="index.html" class="active">Home</a> 
+    <a href="recipes.html">Recipes</a>
+    <a href="ingredients.html">Ingredients</a>
+    <a href="occasions.html">Occasions</a>
+    <a href="about.html">About</a>
+
+    <button class="login-btn" onclick="openLogin()">Login</button>
+    <button class="subscribe-btn" onclick="openLogin('subscribe')">Subscribe</button>
+  </div>
+</div>
+  <!-- HERO -->
+  <div class="hero home-hero">
+  <div class="hero-content">
+    <h1>Discover Delicious Recipes</h1>
+    <p>Search, cook, and enjoy amazing dishes</p>
+  </div>
+</div>
+  <!-- 🔐 LOGIN MODAL -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+
+      <div class="left">
+        <h2>"Embrace the art of cooking, where flavors come alive!"</h2>
+      </div>
+
+      <div class="right">
+        <span class="close" onclick="closeLogin()">×</span>
+
+        <h2>Login</h2>
+        <p>Enter your email to log in.</p>
+
+        <div class="form-box">
+          <input type="email" id="email" placeholder="Enter your email">
+          <input type="password" id="password" placeholder="Enter password">
+          <button class="primary-btn" onclick="login()">Continue</button>
+        </div>
+
+        <div class="divider">OR</div>
+
+        <button class="social google">Continue with Google</button>
+        <button class="social facebook">Continue with Facebook</button>
+        <button class="social apple">Continue with Apple</button>
+      </div>
+
+    </div>
+  </div>
+
+<!-- 💳 SUBSCRIBE MODAL -->
+<div id="subscribeModal" class="modal">
+  <div class="modal-content">
+
+    <!-- 🔥 LEFT (UPDATED) -->
+    <div class="left subscribe-left">
+      <h2>Unlock Premium Recipes 🍲</h2>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+      <span class="close" onclick="closeSubscribe()">×</span>
+
+      <h2>Subscribe</h2>
+      <p>Get unlimited access to premium recipes</p>
+
+      <h3 style="color:#ff6b00;">₹99 / month</h3>
+
+      <div class="form-box">
+        <button class="primary-btn" onclick="handlePayment()">Pay Now</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <script src="js/auth.js"></script>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-section">
+      <h2>Savoury 🍽️</h2>
+      <p>Cook smart. Eat better. Enjoy every bite.</p>
+    </div>
+
+    <!-- CENTER -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="ingredients.html">Ingredients</a>
+      <a href="occasions.html">Occasions</a>
+      <a href="about.html">About</a>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>Email: support@savoury.com</p>
+      <p>Phone: +91 98765 43210</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Savoury. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

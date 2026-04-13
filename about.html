@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Savoury</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+
+  <div class="nav-left">
+    <img src="images/Savoury.png" class="logo">
+  </div>
+
+  <div class="nav-center">
+   <input type="text" id="searchInput" onkeydown="handleSearch(event)">
+  </div>
+
+  <div class="nav-right">
+    <a href="index.html">Home</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="ingredients.html">Ingredients</a>
+    <a href="occasions.html">Occasions</a>
+    <a href="about.html" class="active">About</a>
+
+    <button class="login-btn" onclick="openLogin()">Login</button>
+    <button class="subscribe-btn" onclick="openLogin('subscribe')">Subscribe</button>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+
+</div>
+
+<!-- HERO -->
+<div class="hero about-hero">
+  <div class="hero-content">
+    <h1>About Savoury </h1>
+    <p>Where Food Meets Passion</p>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="about-container">
+
+  <div class="about-card fade">
+    <h2>Who We Are</h2>
+    <p>Savoury is your digital kitchen companion...</p>
+  </div>
+
+  <div class="about-card fade">
+    <h2>Our Mission</h2>
+    <p>To make cooking simple, fun, and accessible...</p>
+  </div>
+
+  <div class="about-card fade">
+    <h2>What You Can Do</h2>
+    <ul>
+      <li>🔍 Search recipes instantly</li>
+      <li>🍝 Discover global cuisines</li>
+      <li>📖 Learn cooking techniques</li>
+      <li>❤️ Save your favorites</li>
+    </ul>
+  </div>
+
+  <div class="about-card fade">
+    <h2>Our Vision</h2>
+    <p>To become the #1 platform for food discovery...</p>
+  </div>
+
+</div>
+
+<!-- 🔐 LOGIN MODAL -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+
+    <div class="left">
+      <h2>"Embrace the art of cooking, where flavors come alive!"</h2>
+    </div>
+
+    <div class="right">
+      <span class="close" onclick="closeLogin()">×</span>
+
+      <h2>Login</h2>
+      <p>Enter your email or phone to log in.</p>
+
+      <div class="form-box">
+        <input type="text" id="email" placeholder="Enter email or phone number">
+        <input type="password" id="password" placeholder="Enter password">
+        <button class="primary-btn" onclick="login()">Continue</button>
+      </div>
+
+      <div class="divider">OR</div>
+
+      <button class="social google" onclick="socialLogin('Google')">Continue with Google</button>
+      <button class="social facebook" onclick="socialLogin('Facebook')">Continue with Facebook</button>
+      <button class="social apple" onclick="socialLogin('Apple')">Continue with Apple</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- 💳 SUBSCRIBE MODAL -->
+<div id="subscribeModal" class="modal">
+  <div class="modal-content">
+
+    <div class="left subscribe-left">
+      <h2>Unlock Premium Recipes </h2>
+    </div>
+
+    <div class="right">
+      <span class="close" onclick="closeSubscribe()">×</span>
+
+      <h2>Subscribe</h2>
+      <p>Get unlimited access to premium recipes</p>
+
+      <h3 style="color:#ff6b00;">₹99 / month</h3>
+
+      <div class="form-box">
+        <button class="primary-btn" onclick="payNow()">Pay Now</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h2>Savoury 🍽️</h2>
+      <p>Cook smart. Eat better.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="ingredients.html">Ingredients</a>
+      <a href="occasions.html">Occasions</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>Email: support@savoury.com</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/auth.js"></script>
+
+</body>
+</html>
